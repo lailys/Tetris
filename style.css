@@ -307,7 +307,7 @@ img{
   }
 
   #gameOver {
-    font-size: 200%;
+     font-size: 8vmin;
   }
 
   #instruction {
@@ -356,10 +356,15 @@ img{
   }
 
   #gameOver {
-    font-size: 200%;
+    font-size: 8vmin;
   }
 
   #instruction {
     display: initial;
+  }
+}
+@media only screen and (max-width: 699px){
+  #gameOver {
+    font-size: 8vmin;
   }
 }
