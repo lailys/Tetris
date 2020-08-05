@@ -7,29 +7,37 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lexend+Zetta&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+  <img src="joe-woods-4Zaq5xY5M_c-unsplash.jpg">
   <div id="top">
+      <i id="audio" class="material-icons">volume_up</i>
     <div id="name">tetris</div>
     <div id="clock"></div>
+    <div id="score"></div>
   </div>
 
   <div id="middle">
+      <a id="right"></a>
     <canvas id="tetris" width="240px" height="480px"></canvas>
+    <a id="turn"></a>
+    <a id="left"></a>
   </div>
 
   <div id="bottom">
       <i id="start" class="fa fa-play" ></i>
+      <a id="speedy"></a>
   </div>
   <div id="alert"> 
      <div id="background"></div>
      <div id="gameOver">Game Over</div>
   </div>
-  
+
+  <img src="instruction.png" alt="instruction" id="instruction" >
   <script src="design.js"></script>
 
 
