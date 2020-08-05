@@ -2,6 +2,12 @@
   padding: 0;
   margin: 0;
 }
+html{
+  background-image: url("./joe-woods-4Zaq5xY5M_c-unsplash.jpg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 body {
   background-color: #ffffff;
@@ -9,6 +15,7 @@ body {
   background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: all 0s;
   position: relative;
   padding: 0;
   margin: 0 auto;
@@ -19,7 +26,13 @@ body {
   width: 100vw;
   height: 100vh;
 }
-
+img{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; 
+}
 #top {
   position: fixed;
   top: 5vh;
@@ -28,7 +41,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  font-family: 'Lexend Zetta', sans-serif;
+  font-family: "Lexend Zetta", sans-serif;
   width: 100%;
   height: 15vh;
 }
@@ -36,17 +49,20 @@ body {
 #audio {
   color: #424345;
   z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 10vh;
   left: 20vh;
-  font-size: 110%;
-  opacity: .9;
-  width: 100%;
-  height: 5%;
+  font-size: 140%;
+  opacity: 0.9;
+  width: 5vmin;
+  height: 5vmin;
 }
 
 #audio:hover {
-  color: #F800A5;
+  color: #f800a5;
   opacity: 1;
   cursor: pointer;
 }
@@ -58,7 +74,7 @@ body {
   justify-content: center;
   align-items: center;
   color: #000000e0;
-  font-family: 'Lexend Zetta', sans-serif;
+  font-family: "Lexend Zetta", sans-serif;
   font-size: 360%;
   width: 100vw;
   height: 55%;
@@ -70,8 +86,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Lexend Zetta', sans-serif;
-  color: #01B3FF;
+  font-family: "Lexend Zetta", sans-serif;
+  color: #01b3ff;
   width: 100%;
   height: 25%;
 }
@@ -82,8 +98,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Lexend Zetta', sans-serif;
-  color: #FF3BC7;
+  font-family: "Lexend Zetta", sans-serif;
+  color: #ff3bc7;
   width: 100%;
   height: 20%;
 }
@@ -106,7 +122,6 @@ body {
   background: #000000e0;
   border: 1px solid #000000e0;
   height: 100%;
-
 }
 
 #bottom {
@@ -133,7 +148,7 @@ body {
 }
 
 .fa-play {
-  color: #FF3BC7;
+  color: #ff3bc7;
   z-index: 20;
   border: none;
   font-size: 150%;
@@ -144,7 +159,7 @@ body {
 }
 
 .fa-refresh {
-  color: #01B3FF;
+  color: #01b3ff;
   z-index: 20;
   border: none;
   font-size: 150%;
@@ -155,7 +170,6 @@ body {
 }
 
 #alert {
-  display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -166,7 +180,7 @@ body {
 
 #background {
   background-color: #ff3bc7ab;
-  opacity: .8;
+  opacity: 0.8;
   position: absolute;
   top: 0;
   width: 100vw;
@@ -181,7 +195,7 @@ body {
   position: absolute;
   top: 0vh;
   font-size: 500%;
-  font-family: 'Lexend Zetta', sans-serif;
+  font-family: "Lexend Zetta", sans-serif;
   color: white;
   width: 100vw;
   height: 30vh;
@@ -236,7 +250,7 @@ body {
   height: 80vh;
 }
 
-@media only screen and (max-height:530px) {
+@media only screen and (max-height: 530px) {
   #name {
     font-size: 200%;
   }
@@ -248,13 +262,11 @@ body {
 
   #clock,
   #score {
-
     font-size: 90%;
   }
-
 }
 
-@media only screen and (max-width:530px) {
+@media only screen and (max-width: 530px) {
   #left {
     display: initial;
   }
@@ -277,7 +289,6 @@ body {
     font-size: 300%;
   }
 
-
   #middle {
     height: 58vh;
   }
@@ -285,7 +296,6 @@ body {
   #bottom {
     top: 74vh;
     height: 26vh;
-    ;
   }
 
   #start {
@@ -297,18 +307,15 @@ body {
   }
 
   #gameOver {
-
     font-size: 200%;
   }
 
   #instruction {
     display: initial;
   }
-
 }
 
-@media only screen and (min-width:700px)and (max-width:1024px)and (min-height:1024px)and (max-height:1400px) {
-
+@media only screen and (min-width: 700px) and (max-width: 1024px) and (min-height: 1024px) and (max-height: 1400px) {
   #left {
     display: initial;
   }
@@ -331,8 +338,6 @@ body {
     font-size: 300%;
   }
 
-
-
   #middle {
     height: 64vh;
   }
@@ -340,7 +345,6 @@ body {
   #bottom {
     top: 80vh;
     height: 20vh;
-    ;
   }
 
   #start {
@@ -352,13 +356,10 @@ body {
   }
 
   #gameOver {
-
     font-size: 200%;
   }
 
   #instruction {
     display: initial;
   }
-
 }
-
